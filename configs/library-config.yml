@@ -16,6 +16,7 @@ modules:
   - artifact-id: plugin
     description: This is a gradle plugin to generate icons for Android and iOS from a single source image.
     path: library/plugin
+    plugin: true
 
 # XCFrameworks [name, path, targets (ios, macos)]
 xcframeworks: []
