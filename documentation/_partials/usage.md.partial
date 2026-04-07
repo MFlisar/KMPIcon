@@ -1,0 +1,36 @@
+This library is used like following:
+
+* generate a icon with `AndroidStudio`
+* use this plugin to copy and/or create images for different use cases
+
+**Create a common main icon**
+
+```kotlin
+kmpIcon {
+
+    setup {
+        sourceModule = "demo/app/android" // path of the android module where the source file is located (default: app/app/android")
+        sourceFile = "src/main/ic_launcher-playstore.png" // relative path to the source file (default: src/main/ic_launcher.png)
+    }
+
+    generateCommonIcon {
+        file = "src/commonMain/composeResources/drawable/icon.png" // relative path to the output file (default: src/commonMain/composeResources/drawable/icon.png)
+    }
+}
+```
+
+**Create a ico for windows**
+
+```kotlin
+kmpIcon {
+
+    setup {
+        sourceModule = "demo/app/android" // path of the android module where the source file is located (default: app/app/android")
+        sourceFile = "src/main/ic_launcher-playstore.png" // relative path to the source file (default: src/main/ic_launcher.png)
+    }
+
+    generateIco {
+        file = "icon.ico" // relative path to the output file (default: icon.ico)
+    }
+}
+```

@@ -1,0 +1,21 @@
+# Github Library
+github:
+  name: KMPIcon
+  release: 2026
+  license:
+    name: Apache License 2.0
+    path: blob/main/LICENSE
+
+# Maven
+maven:
+  group-id: io.github.mflisar.kmpicon
+  primary-artifact-id: plugin # used to detect latest release version of the library (dynamically on the published homepage)
+
+# Modules - list of modules [artifact-id, description, path]
+modules:
+  - artifact-id: plugin
+    description: This is a gradle plugin to generate icons for Android and iOS from a single source image.
+    path: library/plugin
+
+# XCFrameworks [name, path, targets (ios, macos)]
+xcframeworks: []

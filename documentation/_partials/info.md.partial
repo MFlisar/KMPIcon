@@ -1,0 +1,5 @@
+This library allows you to generator icons for android, iOS, windows and general compose multiplatform from a single source of truth.
+
+It supports following formats:
+* SVG
+* PNG
