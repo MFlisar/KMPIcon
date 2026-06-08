@@ -11,7 +11,7 @@ plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.vanniktech.maven.publish.base)
     // build tools
-    alias(deps.plugins.kmpdevtools.buildplugin)
+    alias(mflisar.plugins.kmpdevtools.buildplugin)
 }
 
 // ------------------------
